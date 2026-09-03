@@ -68,4 +68,3 @@ BitcoinWallet/
 - QR code scanner untuk alamat tujuan
 - Riwayat transaksi (bitcoinj punya `wallet.getTransactions()`)
 - Peninjauan kode oleh auditor keamanan sebelum dipakai dengan dana nyata
-
