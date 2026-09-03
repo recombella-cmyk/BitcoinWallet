@@ -18,14 +18,14 @@ jobs:
         java-version: '17'
 
     - name: Grant execute permission for gradlew
-      run: chmod +x BitcoinWallet/BitcoinWallet/gradlew
+      run: chmod +x BitcoinWallet/gradlew
 
     - name: Build debug APK with Gradle
       run: ./gradlew assembleDebug
-      working-directory: BitcoinWallet/BitcoinWallet
+      working-directory: BitcoinWallet
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
       with:
         name: app-debug
-        path: BitcoinWallet/BitcoinWallet/app/build/outputs/apk/debug/app-debug.apk
+        path: BitcoinWallet/app/build/outputs/apk/debug/app-debug.apk
